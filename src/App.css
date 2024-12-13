@@ -1,0 +1,76 @@
+/* Netflix-style intro */
+.intro {
+  background: #141414;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  animation: fadeOut 3.5s forwards;
+}
+
+.intro-logo {
+  font-size: 4rem;
+  font-weight: bold;
+  color: red;
+  text-shadow: 0 0 20px rgba(255, 0, 0, 0.7);
+  animation: zoomIn 1.5s;
+}
+
+/* Keyframes for the zoom-in effect */
+@keyframes zoomIn {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  50% {
+    transform: scale(1.1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* Keyframes for fade out */
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    display: none;
+  }
+}
+/* Tailwind CSS animations */
+@keyframes zoomIn {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  .animate-zoom {
+    animation: zoomIn 1.5s;
+  }
+  
+  .animate-fade-in {
+    animation: fadeIn 0.5s ease-in;
+  }
